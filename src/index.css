@@ -1,0 +1,71 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #161724;
+  color: #64ed85;
+  font-family: 'Mouse Memoirs', sans-serif;
+}
+
+.border-radius {
+  border-radius: 7px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  font-size: clamp(2em, 4vw, 3em);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: clamp(280px, 50%, 900px);
+}
+
+.entered-text {
+  border: solid #777;
+  padding: 0.2em 0.6em;
+  width: clamp(280px, 70%, 900px);
+  min-height: 5em;
+  margin-top: 0.7em;
+  display: inline-block;
+  overflow-wrap: break-word;
+}
+
+input[type='text'] {
+  width: clamp(280px, 70%, 900px);
+  margin-top: 1em;
+  font-family: 'Mouse Memoirs', sans-serif;
+  font-size: clamp(0.55em, 1vw, 1em);
+}
+
+.btn {
+  font-family: 'Mouse Memoirs', sans-serif;
+  padding: 0.5em 0.8em;
+  background: #64ed85;
+  font-size: clamp(0.55em, 1vw, 1em);
+  margin-top: 1em;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn:active {
+  color: #777;
+}
