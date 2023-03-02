@@ -7,7 +7,8 @@ const App = () => {
     setText(event.target.value)
   }
 
-  const reset = () => {
+  const reset = (event) => {
+    event.preventDefault()
     setText('')
   }
 
@@ -25,7 +26,6 @@ const App = () => {
         <button className="btn border-radius" onClick={reset}>
           Delete Text
         </button>
-        {/* <textarea className="entered-text">{text}</textarea> */}
       </form>
     </div>
   )
