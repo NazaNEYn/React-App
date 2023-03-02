@@ -21,6 +21,7 @@ const App = () => {
           type="text"
           placeholder="Enter Your Text Here"
           onChange={enterTextHandler}
+          value={text}
         />
         <p className="entered-text border-radius text-center">{text}</p>
         <button className="btn border-radius" onClick={reset}>
